@@ -1,5 +1,6 @@
 {
   "name": "my-gh-pages-app",
+  "homepage": "https://sibsankarmanna.github.io/my-gh-pages-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
