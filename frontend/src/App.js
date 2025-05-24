@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 function App() {
   const [backendMessage, setBackendMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
+    fetch(`${backendUrl}/api/hello`)
       .then(res => res.json())
       .then(data => setBackendMessage(data.message))
       .catch(err => console.error('Error:', err));
